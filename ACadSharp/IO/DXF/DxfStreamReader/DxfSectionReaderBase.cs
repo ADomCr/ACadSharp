@@ -168,6 +168,9 @@ namespace ACadSharp.IO.DXF
 				case DxfFileToken.EntityRay:
 					template = new CadEntityTemplate(new Ray());
 					break;
+				case DxfFileToken.EndSequence:
+					template = new CadEntityTemplate(new Seqend());
+					break;
 				case DxfFileToken.EntitySolid:
 					template = new CadEntityTemplate(new Solid());
 					break;
