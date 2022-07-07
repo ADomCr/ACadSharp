@@ -1,14 +1,13 @@
 ﻿using ACadSharp.Entities;
-using ACadSharp.IO.DWG;
 using ACadSharp.Tables;
 
 namespace ACadSharp.IO.Templates
 {
-	internal class DwgTextEntityTemplate : CadEntityTemplate
+	internal class CadTextEntityTemplate : CadEntityTemplate
 	{
 		public ulong StyleHandle { get; set; }
 
-		public DwgTextEntityTemplate(Entity entity) : base(entity) { }
+		public CadTextEntityTemplate(Entity entity) : base(entity) { }
 
 		public override bool CheckDxfCode(int dxfcode, object value)
 		{
